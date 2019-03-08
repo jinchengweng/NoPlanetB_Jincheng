@@ -7,7 +7,14 @@ import android.support.design.widget.Snackbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
 
 public class BMain extends AppCompatActivity {
     private SwipeRefreshLayout swipeLayout;
@@ -18,6 +25,22 @@ public class BMain extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
+        ImageView myImage = (ImageView)findViewById(R.id.imgRoket);
+
+        ImageView mPlanet = (ImageView) findViewById(R.id.imgPlanet);
+
+
+        Glide.with(this)
+                .load(R.drawable.planetearth)
+                .apply(new RequestOptions()
+                        .centerCrop()
+                        .diskCacheStrategy(DiskCacheStrategy.ALL)
+                )
+                .into(mPlanet);
+
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.drop_item);
+
+        myImage.startAnimation(myanim);
     }
 
     protected SwipeRefreshLayout.OnRefreshListener mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {

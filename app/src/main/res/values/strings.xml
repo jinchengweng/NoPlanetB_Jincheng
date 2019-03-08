@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NoPlanetB_Jincheng</string>
+    <string name="app_nameX">No Planet B</string>
+    <string name="app_nameY">too late for leaving...</string>
+    <string name="usuario">Usuario</string>
+    <string name="cont">Contraseña</string>
+    <string name="sign">sing up</string>
+    <string name="titulo">“PLANETA”</string>
+    <string name="subtitle">zorros</string>
+    <string name="textoAccount">Crear una cuenta</string>
+    <string name="titulosplash">Mr.Fox</string>
+    <string name="Unistall">Unistall</string>
+    <string name="Update">Update</string>
+    <string name="longtext">A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic. Surfaces and edges of the material provide visual cues that are grounded in reality. The use of familiar tactile attributes helps users quickly understand affordances. Yet the flexibility of the material creates new affordances that supercede those in the physical world, without breaking the rules of physics. The fundamentals of light, surface, and movement are key to conveying how objects move, interact, and exist in space and in relation to each other. Realistic lighting shows seams, divides space, and indicates moving parts.</string>
+    <string name="btn_leave">LEAVE</string>
+    <string name="setting">action_settings</string>
+
+    <string name="btn_stay">STAY</string>
+    <string name="tv_generation">And no next generation</string>
+
+</resources>

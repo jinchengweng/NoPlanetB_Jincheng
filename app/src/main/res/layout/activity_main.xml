@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgPlanet"
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:layout_marginBottom="500dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/planetearth" />
+
+    </FrameLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="320dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="135dp"
+        android:src="@drawable/rocketlogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/tv_generation"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLeave"
+        style="@style/leftButton"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="540dp"
+        android:background="@drawable/b_button"
+        android:text="@string/btn_leave" />
+
+    <Button
+        android:id="@+id/btnStay"
+        style="@style/rightButton"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="540dp"
+        android:text="@string/btn_stay" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/myswipe"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="247dp">
+
+        <TextView
+            android:id="@+id/tvLongText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/longtext"
+            android:textSize="16sp"
+            tools:text="@string/longtext" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>
